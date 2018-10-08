@@ -16,8 +16,12 @@ public class AudioActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        audioPlayer(url);
-
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                audioPlayer(url);
+            }
+        }).start();
     }
 
 

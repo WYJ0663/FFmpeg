@@ -2,14 +2,14 @@
 
 buildscript {
     repositories {
-        maven { url 'http://172.17.13.128/nexus/repository/google/'}
-        maven { url 'http://172.17.13.128/nexus/repository/jcenter/'}
+//        maven { url 'http://172.17.13.128/nexus/repository/google/'}
+//        maven { url 'http://172.17.13.128/nexus/repository/jcenter/'}
         google()
         jcenter()
         
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.3.0-alpha12'
+        classpath 'com.android.tools.build:gradle:3.3.0-alpha13'
         
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -18,8 +18,8 @@ buildscript {
 
 allprojects {
     repositories {
-        maven { url 'http://172.17.13.128/nexus/repository/google/'}
-        maven { url 'http://172.17.13.128/nexus/repository/jcenter/'}
+//        maven { url 'http://172.17.13.128/nexus/repository/google/'}
+//        maven { url 'http://172.17.13.128/nexus/repository/jcenter/'}
         google()
         jcenter()
         

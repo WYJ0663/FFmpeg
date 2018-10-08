@@ -19,7 +19,18 @@ add_library( # Sets the name of the library.
         # Provides a relative path to your source file(s).
         ffmpeg_ndk.c
         ffmpeg_decoder.c
-        ffmpeg_voicer.c)
+        ffmpeg_voicer.c
+
+        ffmpeg_play.c
+        queue.c
+
+        ffmpeg_sles_audio.c
+        ffmpeg_sles_util.c
+        ffmpeg_sles_audio_play.c
+        audio-jni.c
+
+        player/player.c
+        )
 
 add_library(libffmpeg
         SHARED
@@ -50,4 +61,5 @@ target_link_libraries( # Specifies the target library.
         # included in the NDK.
         ${log-lib}
         android
+        OpenSLES
         )

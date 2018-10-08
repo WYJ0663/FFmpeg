@@ -9,7 +9,7 @@
 #include <android/native_window_jni.h>
 
 #include <android/log.h>
-#include "util.h"
+#include "ffmpeg_sles_util.h"
 
 #define TAG "yijun"
 #define LOGD(...) __android_log_print(ANDROID_LOG_DEBUG,TAG ,__VA_ARGS__) // 定义LOGD类型
